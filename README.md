@@ -41,4 +41,4 @@ Esta es una aplicación web estática y no requiere ningún proceso de compilaci
 
 ## Despliegue
 
-Esta aplicación está desplegada en: `https://guanes.github.io/DAP-BPMN/`
+Esta aplicación está desplegada en: `https://guanes.github.io/dap-bpmn/`
