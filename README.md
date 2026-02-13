@@ -24,7 +24,7 @@ Esta es una aplicación web estática y no requiere ningún proceso de compilaci
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone https://github.com/guanes/DAP-BPMN.git
+    git clone https://github.com/guanes/dap-bpmn.git
     cd DAP-BPMN
     ```
 
