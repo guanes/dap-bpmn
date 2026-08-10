@@ -1,4 +1,4 @@
-# DAP-BPMN Viewer 
+# DAP-BPMN Viewe
 
 Un visualizador web para diagramas de Business Process Model and Notation (BPMN), diseñado para el proyecto DAP. Esta aplicación permite a los usuarios navegar, visualizar y analizar diagramas de procesos de negocio directamente en su navegador.
 
