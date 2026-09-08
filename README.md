@@ -1,10 +1,50 @@
-# Guía de Integración del Visor de Modelos de Procesos
+# DAP-BPMN Viewer
 
-Este documento describe cómo integrar el visor de modelos de procesos BPMN en cualquier aplicación web.
+DAP-BPMN Viewer es un visualizador web para diagramas de Business Process Model and Notation (BPMN), diseñado para el proyecto DAP. Permite navegar, visualizar y analizar diagramas de procesos de negocio directamente en el navegador.
 
-## Concepto General
+La aplicación funciona completamente en el cliente, por lo que no requiere un backend para visualizar los diagramas. Puede ejecutarse como un sitio web estático de forma independiente o integrarse en otra aplicación web mediante un `<iframe>`.
 
-El visor de procesos es una aplicación web autocontenida. La forma más sencilla y recomendada para integrarlo en otro desarrollo es mediante el uso de un `<iframe>`.
+## Características
+
+* Visualización interactiva de diagramas BPMN.
+* Navegación entre diferentes diagramas de proceso.
+* Búsqueda de elementos específicos del proceso.
+* Ejecución 100% en el cliente, sin backend para la visualización.
+
+## Stack Tecnológico
+
+* **HTML5**
+* **CSS3**, con Foundation como base de estilos.
+* **JavaScript**, con jQuery, Backbone.js y KineticJS.
+
+## Cómo Empezar
+
+DAP-BPMN Viewer es una aplicación web estática y no requiere un proceso de compilación. Para ejecutarla localmente, clona el repositorio y sirve sus archivos mediante un servidor HTTP:
+
+1. **Clona el repositorio:**
+
+    ```bash
+    git clone https://github.com/guanes/dap-bpmn.git
+    cd dap-bpmn
+    ```
+
+2. **Inicia un servidor web local.** Por ejemplo, usando el servidor incorporado de Python 3:
+
+    ```bash
+    python3 -m http.server
+    ```
+
+3. **Abre la aplicación** en tu navegador visitando [http://localhost:8000](http://localhost:8000).
+
+## Despliegue
+
+El visor está desplegado en [https://guanes.github.io/dap-bpmn/](https://guanes.github.io/dap-bpmn/).
+
+Además de utilizarse de forma independiente, el visor puede integrarse en cualquier aplicación web. La siguiente sección describe ese escenario.
+
+## Integración en Otra Aplicación
+
+El visor de procesos es una aplicación web autocontenida. La forma más sencilla de integrarlo en otro desarrollo es mediante el uso de un `<iframe>`.
 
 Este enfoque aísla completamente el visor, evitando cualquier conflicto de estilos (CSS) o de librerías (JavaScript) con la aplicación principal.
 
