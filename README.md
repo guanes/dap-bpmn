@@ -1,10 +1,10 @@
-# DAP-BPMN Viewer
- 
+# DAP-BPMN Viewer 
+
 DAP-BPMN Viewer es un visualizador web para diagramas de Business Process Model and Notation (BPMN), diseñado para el proyecto DAP. Permite navegar, visualizar y analizar diagramas de procesos de negocio directamente en el navegador.
 
 La aplicación funciona completamente en el cliente, por lo que no requiere un backend para visualizar los diagramas. Puede ejecutarse como un sitio web estático de forma independiente o integrarse en otra aplicación web mediante un `<iframe>`.
 
-## Características
+## Características 
 
 * Visualización interactiva de diagramas BPMN.
 * Navegación entre diferentes diagramas de proceso.
@@ -23,17 +23,15 @@ DAP-BPMN Viewer es una aplicación web estática y no requiere un proceso de com
 
 1. **Clona el repositorio:**
 
-    ```bash
-    git clone https://github.com/guanes/dap-bpmn.git
-    cd dap-bpmn
-    ```
-
+   ```bash
+   git clone https://github.com/guanes/dap-bpmn.git
+   cd dap-bpmn
+   ```
 2. **Inicia un servidor web local.** Por ejemplo, usando el servidor incorporado de Python 3:
 
-    ```bash
-    python3 -m http.server
-    ```
-
+   ```bash
+   python3 -m http.server
+   ```
 3. **Abre la aplicación** en tu navegador visitando [http://localhost:8000](http://localhost:8000).
 
 ## Despliegue
@@ -150,7 +148,7 @@ Aquí tiene un ejemplo de una página HTML que embebe el visor de procesos:
     <script>
         // Opcional: puede cambiar dinámicamente el diagrama mostrado
         // cambiando el atributo 'src' del iframe.
-        
+      
         function cargarDiagrama(diagramId) {
             const iframe = document.getElementById('visor-bpmn');
             const urlBase = 'http://localhost/visor-procesos/index.html#diagram/';
@@ -177,6 +175,6 @@ Aquí tiene un ejemplo de una página HTML que embebe el visor de procesos:
 
 ## Consideraciones Adicionales
 
-*   **Paginación:** Si su aplicación tiene una lista paginada de diagramas, puede usar JavaScript para cambiar dinámicamente el atributo `src` del `<iframe>` cuando el usuario seleccione un diagrama diferente. El ejemplo de código incluye una función `cargarDiagrama` para este propósito.
-*   **Rendimiento:** El visor cargará todos sus recursos dentro del `<iframe>`. El impacto en el rendimiento de la página principal debería ser mínimo.
-*   **Sin modificaciones:** No es necesario modificar el código fuente del visor para que esta integración funcione.
+* **Paginación:** Si su aplicación tiene una lista paginada de diagramas, puede usar JavaScript para cambiar dinámicamente el atributo `src` del `<iframe>` cuando el usuario seleccione un diagrama diferente. El ejemplo de código incluye una función `cargarDiagrama` para este propósito.
+* **Rendimiento:** El visor cargará todos sus recursos dentro del `<iframe>`. El impacto en el rendimiento de la página principal debería ser mínimo.
+* **Sin modificaciones:** No es necesario modificar el código fuente del visor para que esta integración funcione.
